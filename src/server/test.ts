@@ -11,11 +11,12 @@ const main = async () => {
 //   clientId: process.env.AUTH_GOOGLE_ID,
 //   clientSecret: process.env.AUTH_GOOGLE_SECRET?.slice(0, 5),
 // });
-const res = await fetch(
-  "https://accounts.google.com/.well-known/openid-configuration"
-);
+// const res = await fetch(
+//   "https://accounts.google.com/.well-known/openid-configuration"
+// );
 
-console.log(res.status);
+// console.log(res.status);
+console.log(process.env.AUTH_GOOGLE_ID);
 }
 
 main();

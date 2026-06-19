@@ -31,7 +31,13 @@ declare module "next-auth" {
  *
  * @see https://next-auth.js.org/configuration/options
  */
+// console.log("AUTH_GOOGLE_ID", process.env.AUTH_GOOGLE_ID);
+// console.log(
+//   "AUTH_GOOGLE_SECRET exists",
+//   !!process.env.AUTH_GOOGLE_SECRET
+// );
 export const authConfig = {
+  debug: true,
   providers: [
     DiscordProvider,
     Google({
